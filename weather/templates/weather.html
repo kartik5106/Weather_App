@@ -42,7 +42,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
-                    {% for weather in weather_data %}
+                    {% for weather in city_weather %}
                     <div class="box">
                         <article class="media">
                             <div class="media-left">
@@ -50,6 +50,7 @@
                                     <img src="https://openweathermap.org/themes/openweathermap/assets/img/landing/icon-1.png" alt="Image">
                                 </figure>
                             </div>
+                            <p>{{weather.city }}</p>
                             <div class="media-content">
                                 <div class="content">
                                     <p>
